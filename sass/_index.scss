@@ -1,3 +1,6 @@
+main {
+  margin-top: 116px;
+}
 .principal img {
   width: 100%;
 }
@@ -20,4 +23,38 @@ iframe {
 }
 .article_container article p {
   padding: 50px;
+}
+.carousel {
+  position: relative;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.img {
+  vertical-align: middle;
 }

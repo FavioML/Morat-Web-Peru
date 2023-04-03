@@ -12,10 +12,10 @@ $estiloFormulario: (
   justify-content: center;
 }
 form {
-  width: map-get($estiloFormulario, $ancho);
-  border: map-get($estiloFormulario, $borde);
-  padding: map-get($estiloFormulario, $relleno);
-  border-radius: map-get($estiloFormulario, $borde-redondeado);
+  width: map-get($estiloFormulario, ancho);
+  border: map-get($estiloFormulario, borde);
+  padding: map-get($estiloFormulario, relleno);
+  border-radius: map-get($estiloFormulario, borde-redondeado);
 }
 
 .btn {

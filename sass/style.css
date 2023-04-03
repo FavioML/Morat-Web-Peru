@@ -1,56 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
-/* estilos generales*/
-* {
-  margin: 0px;
-  padding: 0px;
+main {
+  margin-top: 116px;
 }
 
-h1 {
-  text-align: center;
-  padding: 10px;
-}
-
-body {
-  background-color: black;
-  color: beige;
-  font-family: sans-serif;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  background-color: black;
-}
-
-.nav-link {
-  color: whitesmoke;
-  font-size: 1.3rem;
-}
-
-.navbar-collapse {
-  flex-grow: initial;
-}
-
-footer {
-  padding: 50px;
-  border-top: 1px solid #403e3e;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer ul li {
-  list-style: none;
-}
-
-footer .bi {
-  color: orange;
-  font-size: 2.3rem;
-}
-
-/*index*/
 .principal img {
   width: 100%;
 }
@@ -80,23 +32,58 @@ iframe {
   padding: 50px;
 }
 
-/* galeria*/
-.main-galeria img {
-  width: 350px;
-  height: 350px;
+.carousel {
+  position: relative;
 }
 
-.galeria-container {
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.img {
+  vertical-align: middle;
+}
+
+/*se aplica mixin*/
+.main-galeria img {
+  width: 400px;
+  height: 400px;
+}
+
+.main-galeria .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  grid-row-gap: 60px;
+  row-gap: 60px;
   justify-items: center;
   margin-top: 20px;
 }
 
-/*biografia*/
 .bio-info {
   margin: 10px;
   padding: 20px;
@@ -110,7 +97,6 @@ fieldset {
   margin-bottom: 100px;
 }
 
-/*eventos*/
 .eventos-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -119,6 +105,80 @@ fieldset {
   gap: 10px;
   justify-content: space-around;
   margin-top: 20px;
+}
+
+/*map para formulario*/
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: orange;
+}
+
+.card-text {
+  color: black;
+}
+
+/*variables*/
+/* estilos generales*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  background-color: black;
+  color: beige;
+  font-family: sans-serif;
+}
+
+/*header con nesting*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+header .navbar-collapse {
+  justify-content: flex-end;
+}
+header .nav-item {
+  display: flex;
+  align-items: center;
+}
+header .nav-link {
+  color: rgb(218, 93, 93);
+  font-size: 1.3rem;
+}
+
+/*footer con nesting*/
+footer {
+  padding: 50px;
+  border-top: 1px solid #403e3e;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer li {
+  list-style: none;
+}
+footer .bi {
+  color: rgb(218, 93, 93);
+  font-size: 2.3rem;
 }
 
 /*MEDIA QUERIES*/
@@ -163,4 +223,4 @@ fieldset {
   .galeria-container {
     grid-template-columns: repeat(1, 1fr);
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

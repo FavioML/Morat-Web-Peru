@@ -6,12 +6,11 @@
 .main-galeria img {
   @include tamaños(400px, 400px);
 }
-.galeria-container {
+.main-galeria .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  grid-row-gap: 60px;
+  row-gap: 60px;
   justify-items: center;
   margin-top: 20px;
 }

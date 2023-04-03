@@ -1,0 +1,26 @@
+/*map para formulario*/
+
+$estiloFormulario: (
+  ancho: 50%,
+  borde: 1px solid white,
+  relleno: 20px,
+  borde-redondeado: 5px,
+);
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: map-get($estiloFormulario, $ancho);
+  border: map-get($estiloFormulario, $borde);
+  padding: map-get($estiloFormulario, $relleno);
+  border-radius: map-get($estiloFormulario, $borde-redondeado);
+}
+
+.btn {
+  background-color: orange;
+}
+.card-text {
+  color: black;
+}

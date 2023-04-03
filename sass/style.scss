@@ -1,0 +1,107 @@
+@import "index";
+@import "galeria";
+@import "biogrrafia";
+@import "eventos";
+@import "contacto";
+
+/*variables*/
+$rojoMorat: red;
+
+/* estilos generales*/
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  background-color: black;
+  color: beige;
+  font-family: sans-serif;
+}
+
+/*header con nesting*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    color: $rojoMorat;
+    font-size: 1.3rem;
+  }
+}
+
+/*footer con nesting*/
+footer {
+  padding: 50px;
+  border-top: 1px solid #403e3e;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li {
+    list-style: none;
+  }
+  .bi {
+    color: $rojoMorat;
+    font-size: 2.3rem;
+  }
+}
+
+/*MEDIA QUERIES*/
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+  /*galeria*/
+  .galeria-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+/*mobile*/
+@media only screen and (max-width: 576px) {
+  /*Estilos Generrales*/
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: 90%;
+  }
+  .menu-nav {
+    padding: 10px 0px;
+  }
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    width: 500px;
+    height: 280px;
+  }
+  .article_info-a {
+    flex-direction: column;
+    text-align: justify;
+  }
+  .article_info-b {
+    flex-direction: column-reverse;
+    text-align: justify;
+  }
+
+  /*galeria*/
+  .galeria-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

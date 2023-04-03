@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
-
 /* estilos generales*/
 * {
   margin: 0px;
   padding: 0px;
 }
+
 h1 {
   text-align: center;
   padding: 10px;
@@ -15,50 +15,36 @@ body {
   color: beige;
   font-family: sans-serif;
 }
-/* header {
+
+header {
   position: sticky;
   top: 0;
   background-color: black;
-  display: flex;
-  justify-content: space-between;
 }
-.menu-nav {
-  padding: 20px;
-  display: flex;
-  align-items: flex-end;
-}
-nav ul {
-  display: flex;
-}
-ul li {
-  list-style: none;
-  margin: 0px 10px;
-}
-
-ul li a {
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-} */
 
 .nav-link {
   color: whitesmoke;
   font-size: 1.3rem;
 }
+
 .navbar-collapse {
   flex-grow: initial;
 }
+
 footer {
   padding: 50px;
   border-top: 1px solid #403e3e;
 }
+
 footer ul {
   display: flex;
   justify-content: space-evenly;
 }
+
 footer ul li {
   list-style: none;
 }
+
 footer .bi {
   color: orange;
   font-size: 2.3rem;
@@ -68,32 +54,38 @@ footer .bi {
 .principal img {
   width: 100%;
 }
+
 .video-container {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
+
 iframe {
   width: 640px;
   height: 400px;
 }
+
 .article_container article {
   display: flex;
   padding: 20px;
   align-items: center;
 }
+
 .article_container article img {
   width: 100%;
 }
+
 .article_container article p {
   padding: 50px;
 }
-/* galeria*/
 
+/* galeria*/
 .main-galeria img {
   width: 350px;
   height: 350px;
 }
+
 .galeria-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -103,8 +95,8 @@ iframe {
   justify-items: center;
   margin-top: 20px;
 }
-/*biografia*/
 
+/*biografia*/
 .bio-info {
   margin: 10px;
   padding: 20px;
@@ -138,7 +130,6 @@ fieldset {
     grid-template-rows: repeat(6, 1fr);
   }
 }
-
 /*mobile*/
 @media only screen and (max-width: 576px) {
   /*Estilos Generrales*/
@@ -168,9 +159,8 @@ fieldset {
     flex-direction: column-reverse;
     text-align: justify;
   }
-
   /*galeria*/
   .galeria-container {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} /*# sourceMappingURL=style.css.map */

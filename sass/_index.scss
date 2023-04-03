@@ -1,0 +1,23 @@
+.principal img {
+  width: 100%;
+}
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+iframe {
+  width: 640px;
+  height: 400px;
+}
+.article_container article {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.article_container article img {
+  width: 100%;
+}
+.article_container article p {
+  padding: 50px;
+}

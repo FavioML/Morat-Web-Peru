@@ -77,8 +77,9 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  header img {
-    width: 90%;
+  .navbar-image {
+    width: 25%;
+    padding: 1.2rem;
   }
   .menu-nav {
     padding: 10px 0px;

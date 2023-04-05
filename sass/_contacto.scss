@@ -1,12 +1,12 @@
 /*map para formulario*/
 
 $estiloFormulario: (
-  ancho: 50%,
+  ancho: 40%,
   borde: 1px solid white,
-  relleno: 20px,
+  relleno: 10px,
   borde-redondeado: 5px,
+  alineacion-texto: center,
 );
-
 .form-container {
   display: flex;
   justify-content: center;
@@ -16,6 +16,7 @@ form {
   border: map-get($estiloFormulario, borde);
   padding: map-get($estiloFormulario, relleno);
   border-radius: map-get($estiloFormulario, borde-redondeado);
+  text-align: map-get($estiloFormulario, alineacion-texto);
 }
 
 .btn {

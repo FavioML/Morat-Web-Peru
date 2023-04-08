@@ -19,8 +19,17 @@ header .nav-link-red {
 
 .navbar-image {
   width: 40%;
+  animation: ease-in animation 1s;
 }
 
+@keyframes animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .principal img {
   width: 100%;
 }
@@ -101,6 +110,11 @@ footer .bi {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s ease all;
+}
+
+.main-galeria img:hover {
+  transform: scale(1.05);
 }
 
 fieldset {
@@ -125,25 +139,23 @@ fieldset {
 }
 
 /*map para formulario*/
-.form-container {
-  display: flex;
-  justify-content: center;
+.row {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-form {
-  width: 40%;
+.g-3 {
+  width: 50%;
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
+  align-items: center;
 }
 
 .btn {
   background-color: orange;
-}
-
-.card-text {
-  color: black;
 }
 
 /*variables*/
@@ -180,6 +192,13 @@ header .nav-item {
 header .nav-link {
   color: rgb(218, 93, 93);
   font-size: 1.3rem;
+}
+header .btn {
+  background-color: gray;
+}
+header .btn-primary a {
+  text-decoration: none;
+  color: white;
 }
 
 /*footer con nesting*/

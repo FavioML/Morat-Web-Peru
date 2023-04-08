@@ -29,7 +29,7 @@
   <body>
     <header id="header-principal">
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary rounded"
+        class="navbar navbar-expand-lg bg-body-tertiary"
         aria-label="Thirteenth navbar example"
       >
         <div class="container-fluid">
@@ -109,42 +109,71 @@
       </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-        <form class="form-container">
-            <fieldset>
-                <legend>Datos de Contato</legend>
-                <br>
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre">
-                <br>
-                <label for="mail"> Correo electrónico</label>
-                <input type="text" name="mail">
-                <br>
-                <br>
-                <div>Indique evento de su interes:</div>
-                <br>
-                <select name="eventos">
-                  <option value="fiesta">Fiesta Privada</option>
-                  <option value="evento">Evento Empresarial</option>
-                  <option value="festival">Festival</option>
-                </select>
-                <br>
-                <br>
-                <div>Ingrese su rango de Edad:</div>
-                <br>
-                <input type="checkbox" name="joven" value="18 y 30" /> entre 18 y 30 años
-                <br>
-                <input type="checkbox" name="adulto" value="30 y 45 " /> entre 30 y 45 años
-                <br>
-                <input type="checkbox" name="publico selecto" value=" 45 años" /> más de 45 años
-                <br>
-                <br>
-                <input type="reset" value="Limpiar formulario" />
-                <br>
-                <br>
-                <input type="submit" value="Enviar info" />
-              </fielset>
-        </form>    
+      <h1>Formulario de Contacto</h1>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Apellido</label>
+          <input type="password" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">E-mail</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="ejemplo@mail.com"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label"
+            >Código país + Número</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="+51 999 999 999"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Tipo de Evento</label>
+          <select id="inputState" class="form-select">
+            <option selected>Elige...</option>
+            <option>Fiesta Privada</option>
+            <option>Evento Empresarial</option>
+            <option>Festival</option>
+            <option>Meet and Greet</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Horas</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputZip"
+            placeholder="Máx. 3hrs"
+          />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Acepto términos y condiciones
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
     </main>
     <footer>
       <div class="container">
@@ -214,4 +243,3 @@
     ></script>
   </body>
 </html>
-

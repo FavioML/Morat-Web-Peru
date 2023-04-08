@@ -6,12 +6,8 @@
 .main-galeria img {
   @include tamaños(100%, 100%);
   object-fit: cover;
+  transition: 0.3s ease all;
 }
-// .main-galeria .container {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-template-rows: repeat(3, 1fr);
-//   row-gap: 60px;
-//   justify-items: center;
-//   margin-top: 20px;
-// }
+.main-galeria img:hover {
+  transform: scale(1.05);
+}

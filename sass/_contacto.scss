@@ -1,27 +1,27 @@
 /*map para formulario*/
 
 $estiloFormulario: (
-  ancho: 40%,
+  ancho: 50%,
   borde: 1px solid white,
   relleno: 10px,
   borde-redondeado: 5px,
-  alineacion-texto: center,
+  alineacion-texto: left,
+  alineación-contenido: center,
 );
-.form-container {
-  display: flex;
-  justify-content: center;
+.row {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-form {
+.g-3 {
   width: map-get($estiloFormulario, ancho);
   border: map-get($estiloFormulario, borde);
   padding: map-get($estiloFormulario, relleno);
   border-radius: map-get($estiloFormulario, borde-redondeado);
   text-align: map-get($estiloFormulario, alineacion-texto);
+  align-items: map-get($estiloFormulario, alineación-contenido);
 }
 
 .btn {
   background-color: orange;
-}
-.card-text {
-  color: black;
 }

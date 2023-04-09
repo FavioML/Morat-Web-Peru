@@ -16,7 +16,14 @@ header {
 }
 
 .principal img {
-  width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.w-100 {
+  width: 100% !important;
+}
+.d-block {
+  display: block !important;
 }
 .video-container {
   display: flex;
@@ -71,6 +78,23 @@ iframe {
 
 .img {
   vertical-align: middle;
+}
+
+.musicIframe {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    justify-content: space-around;
+    margin-right: -15px;
+    margin-left: -15px;
+    .mbot20 {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 footer {

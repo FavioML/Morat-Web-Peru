@@ -18,6 +18,18 @@ h1 {
   text-align: center;
   padding: 10px;
 }
+.navbar-image {
+  width: 40%;
+  animation: ease-in animation 1s;
+}
+@keyframes animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 body {
   background-color: black;

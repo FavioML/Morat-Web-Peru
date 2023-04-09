@@ -8,11 +8,14 @@ $estiloFormulario: (
   alineacion-texto: left,
   alineación-contenido: center,
 );
-.row {
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
+.contacto-form {
+  .row {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 }
+
 .g-3 {
   width: map-get($estiloFormulario, ancho);
   border: map-get($estiloFormulario, borde);

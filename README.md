@@ -1,4 +1,4 @@
-# Pagina web para Morat Peru FanClub - Preentrega 2
+# Pagina web para Morat Peru FanClub
 
 ### MORAT WEB PERU
 

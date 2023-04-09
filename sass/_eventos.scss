@@ -1,5 +1,9 @@
 .container {
   .row {
+    .card-cover {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .pt-5 {
       opacity: 0;
     }
